@@ -1,4 +1,5 @@
-=== Please note: this example doesn't seem to work on iOS 7 or higher. If you fix it, please send a pull request
+Please note: this example doesn't seem to work on iOS 7 or higher. If you fix it, please send a pull request.
+----------------------
 
 This program provides an example (on Apple's iOS) for how to get audio data from the microphone and reroute it to be heard through the speaker.
 
