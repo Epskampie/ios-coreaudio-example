@@ -117,6 +117,10 @@ static OSStatus playbackCallback(void *inRefCon,
  */
 - (id) init {
 	self = [super init];
+    
+    // You can adjust the latency of RemoteIO (and, in fact, any other audio framework) by setting the kAudioSessionProperty_PreferredHardwareIOBufferDuration property
+    float aBufferLength = 0.005; // In seconds
+    AudioSessionSetProperty(kAudioSessionProperty_PreferredHardwareIOBufferDuration, sizeof(aBufferLength), &aBufferLength);
 	
 	OSStatus status;
 	
