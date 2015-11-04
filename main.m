@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IosAudioController.h"
+#import "ArutsAppDelegate.h"
 
-int main(int argc, char *argv[]) {
-    
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	
-	iosAudio = [[IosAudioController alloc] init];
-	
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ArutsAppDelegate class]));
+    }
 }
