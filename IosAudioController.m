@@ -269,7 +269,7 @@ static OSStatus playbackCallback(void *inRefCon,
  */
 - (void) dealloc {
 	[super	dealloc];
-	AudioUnitUninitialize(audioUnit);
+	AudioComponentInstanceDispose(audioUnit);
 	free(tempBuffer.mData);
 }
 
