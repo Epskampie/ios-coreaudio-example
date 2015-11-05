@@ -35,6 +35,7 @@
     [super viewDidLoad];
 	[startButton addTarget:self action:@selector(startButtonTapped) forControlEvents:UIControlEventTouchUpInside];
 	[stopButton addTarget:self action:@selector(stopButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    iosAudio = [[IosAudioController alloc] init];
 }
 
 - (void)startButtonTapped {
