@@ -1,7 +1,4 @@
-Please note: this example doesn't seem to work on iOS 7 or higher. If you fix it, please send a pull request.
-----------------------
-
-This program provides an example (on Apple's iOS) for how to get audio data from the microphone and reroute it to be heard through the speaker.
+This program provides an example (on Apple's iOS) for how to get audio data from the microphone and reroute it to be heard through the speaker. Should work on iOS 9.1 and higher.
 
 This is based on:
 
@@ -13,6 +10,3 @@ Last located at:
 http://developer.apple.com/library/ios/#documentation/MusicAudio/Conceptual/CoreAudioOverview/Introduction/Introduction.html
 
 Simply open the project in xcode, and press "Build and Run". 
-
-October 2010
-Simon Epskamp.
